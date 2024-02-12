@@ -1,0 +1,38 @@
+:root{
+    --bg-color: pink;
+    --txt-color: white;
+}
+:root[dark-mode]{
+    --bg-color: #369;
+    --txt-color:white;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.info{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+}
+.bottom-right{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+
+}
+#toggleDarkMode {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    cursor: pointer;
+  }
+
