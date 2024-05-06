@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Image Viewer</title>
+    <link rel="stylesheet" href="dog.css"
+</head>
+<body>
+
+    <h1>Dog Image Viewer</h1>
+
+    <label for="breedInput">Search for a dog breed:</label>
+    <input type="text" id="breedInput" oninput="handleInput(this.value)" list="breedList" placeholder="Type a dog breed">
+
+    <datalist id="breedList"></datalist>
+
+    <button onclick="showImages()">Show Images</button>
+
+    <p id="breedNotFound" style="color: red; display: none;">No such breed</p>
+
+    <div id="imageContainer"></div>
+
+    <script src="dogScript.js"></script>
+</body>
+</html>
